@@ -31,8 +31,8 @@ class FragmentPertama : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnFragmentKedua.setOnClickListener{
-            val mBundle = Bundle()
-            it.findNavController().navigate(R.id.action_fragmentPertama_to_fragmentKedua, mBundle)
+            val actionToFragmentPertama = FragmentPertamaDirections.actionFragmentPertamaToFragmentKedua()
+            view.findNavController().navigate(actionToFragmentPertama)
         }
 
     }
