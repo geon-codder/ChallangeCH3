@@ -49,8 +49,4 @@ class FragmentKeempat : Fragment() {
         _binding = null
     }
 }
-//
-//private operator fun Editable.rem(i: Int): Any {
-//    return 0
-//}
 

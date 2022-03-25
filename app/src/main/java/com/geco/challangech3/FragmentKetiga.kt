@@ -39,7 +39,6 @@ class FragmentKetiga : Fragment() {
 
 
         val aName = FragmentKetigaArgs.fromBundle(arguments as Bundle).name
-//        binding.textView3.text = "Screen 3"
         binding.tvName.text = "Nama: $aName"
 
         binding.btnToFragmentKeempat.setOnClickListener {

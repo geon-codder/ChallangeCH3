@@ -26,10 +26,6 @@ class FragmentKedua : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //Mendapatkan data argument sesuai dengan key yang dimaksud
-//        val aName = arguments?.getString(FragmentPertama.EXTRA_NAME)
-
-//        binding.tvNama.text = "Nama kamu: $aName"
         
         binding.btnToFragmentKetiga.setOnClickListener { view ->
             if (binding.etName.text.isNullOrEmpty()){
