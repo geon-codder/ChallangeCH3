@@ -30,14 +30,14 @@ class FragmentKeempat : Fragment() {
             val umur = Integer.parseInt(binding.etUsia.text.toString())
             fun cek():String{
                 return if(umur % 2 == 0){
-                    "Umur genap"
+                    "Bernilai genap"
                 }else{
-                    "umur ganjil"
+                    "Bernilai ganjil"
                 }
             }
             val addres = binding.etAlamat.text.toString()
             val job = binding.etPekerjaan.text.toString()
-            val person = Person("${cek()}","$addres","$job")
+            val person = Person("$umur, ${cek()}","$addres","$job")
 
             findNavController().previousBackStackEntry?.savedStateHandle?.set("person", person)
             findNavController().navigateUp()
